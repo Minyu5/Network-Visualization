@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.4;
+  color: black;
+}
+
+.contentWrapper {
+  margin-top: 20px;
+  display: flex;
+}
+
+.forms {
+  margin-left: 30px;
+}
+
+.graph {
+  width: 546px;
+  max-width: 546px;
+  height: 546px;
+  max-height: 546px;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .contentWrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .forms {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
